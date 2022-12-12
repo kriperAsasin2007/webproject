@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="with=device-width, initial-scale=1.0">
+        <title>University Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c6f6f13923.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo_lnu1.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a> </li>
+                        <li><a href="about.html">ABOUT</a> </li>
+                        <li><a href="course.html">COURSE</a> </li>
+                        <li><a href="blog.html">BLOG</a> </li>
+                        <li><a href="contact.html">CONTACT</a> </li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Certificates & Online Programs For 2023</h1>
+        </section>
+
+
+        <!----- Blog Page Content ----->
+        
+        <section class="blog-content">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="images/certificate.jpg">
+                    <h2>Our Certificates & Online Programs For 2023</h2>
+                    <p>Student scientific work is an equally important component of the educational process, because there are future post-graduate students and scientists among the students
+                         of higher education. And the best way to talk about your first scientific interests is to give presentations at such conferences and publications in various scientific
+                          publications. In 2021, the graduates will produce 451 scientific articles, including 154 individual papers, and up to 1,075 theses at conferences, of which 564 are individual papers.</p>
+                         <br>
+                         <p>Such efforts of our employees and students of education have been recognized with state awards, titles and prizes for scientific achievements: 34 students became prize winners in the II
+                             round of the All-Ukrainian competition of student scientific works in the fields of knowledge, 34 employees received prizes. 11 employees of the University received the scholarship of 
+                             the Cabinet of Ministers of Ukraine for young scientists, 25 employees became laureates of the award of the Lviv regional state administration and the Lviv regional council.</p>
+                              <br>
+                              <p>The university is open to the world, because it maintains close contacts not only with Ukrainian, but also with international partners through the conclusion of bilateral agreements. 
+                                A total of 256 such contracts have been concluded, 68 of which are under Erasmus+ programs. During the reporting period, 125 employees of the University went on business trips abroad,
+                                 and 96 students and graduate students used the right to academic international mobility.</p>
+                                  <br>
+                                  <p>The pride of Lviv University is the objects that constitute the national heritage: Herbarium, Collection of cultures of antibiotic-producing microorganisms, Collection of tropical 
+                                    and subtropical plants of the Botanical Garden, Scientific funds and museum exposition of the Zoological Museum, Scientific research complex of equipment for the study of artificial 
+                                    celestial bodies in near space of the Astronomical Observatory, Fund of manuscripts, old printed and rare books of the Scientific Library.</p>
+                                    <br>
+                                  <p>All these things are only a small part of our goals for the future, because we are also working on.</p>
+                                  <br><br>
+                                  <p>improving the quality assurance of the educational process;<br><br>
+                                    promoting the brand of the University, forming a holistic perception of LNU named after I. Franko in Ukraine and abroad;<br><br>
+                                    the formation of a conscious and ambitious intellectual elite;<br><br>
+                                    the development of highly cultural and scientific environments;<br><br>
+                                    deepening the knowledge of young people about history and national identification;<br><br>
+                                    increasing the number of highly qualified personnel needed by society and the state;</p>
+                    <div class="comment-box">
+                        <h3>Leave a comment</h3>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="email" placeholder="Enter Email">
+                            <textarea rows="5" placeholder="Your comment"></textarea>
+                            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="blog-right">
+                    <h3>Post Categories</h3>
+                    <div>
+                        <span>Secondary Education</span>
+                        <span>014</span>
+                    </div>
+
+                    <div>
+                        <span>Applied Mathematics</span>
+                        <span>113</span>
+                    </div>
+
+                    <div>
+                        <span>System Analysis</span>
+                        <span>124</span>
+                    </div>
+
+                    <div>
+                        <span>Computer Science</span>
+                        <span>122</span>
+                    </div>
+
+                    <div>
+                        <span>Cyber Security</span>
+                        <span>125</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----- Footer ----->
+
+        <section class="footer">
+            <h4></h4>
+            <p>© Ivan Franko Lviv National University</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/franko.lviv.ua" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/lnu.prykladna/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@user-nh2bv2yi1r" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://en.wikipedia.org/wiki/University_of_Lviv" target="_blank"><i class="fa-brands fa-wikipedia-w"></i></a>
+            </div>
+        </section>
+
+<!----- JavaScript for Toggle Menu ----->
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            
+            function showMenu()
+            {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu()
+            {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

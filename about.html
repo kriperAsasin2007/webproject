@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="with=device-width, initial-scale=1.0">
+        <title>University Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c6f6f13923.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo_lnu1.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a> </li>
+                        <li><a href="about.html">ABOUT</a> </li>
+                        <li><a href="course.html">COURSE</a> </li>
+                        <li><a href="blog.html">BLOG</a> </li>
+                        <li><a href="contact.html">CONTACT</a> </li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+        </section>
+
+        <!----- About Us Content ----->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>We are the oldest university</h1>
+                    <p>The Ivan Franko National University of Lviv is a classic institution that is not only faithful to traditions, but also aims to modernize all areas of its activity.<br><br>
+
+                        It is thanks to the development in the scientific, educational and cultural spheres that the University occupies one of the best positions in international and all-Ukrainian rankings, in particular, in 2021, these indicators were:<br><br>
+                        
+                        Third place in the scientific-metric database "Scopus";<br>
+                        Third place in the Consolidated rating of Higher Education Institutions of Ukraine;<br>
+                        4-9 (1000+) in THE rating;<br>
+                        7 (1001–1200) in the QS ranking;<br>
+                        Second place in U-Multirank;<br>
+                        Sixth place among the list of TOP-200 Ukraine;<br>
+                        23 position in Webometrics.</p>
+                      <a href="blog.html" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+
+                <div class="about-col">
+                    <img src="images/assambley.jpg">
+                </div>
+            </div>
+
+        </section>
+        
+
+        <!----- Footer ----->
+
+        <section class="footer">
+            <h4></h4>
+            <p>© Ivan Franko Lviv National University</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/franko.lviv.ua" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/lnu.prykladna/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@user-nh2bv2yi1r" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://en.wikipedia.org/wiki/University_of_Lviv" target="_blank"><i class="fa-brands fa-wikipedia-w"></i></a>
+            </div>
+        </section>
+
+<!----- JavaScript for Toggle Menu ----->
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            
+            function showMenu()
+            {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu()
+            {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

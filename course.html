@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="with=device-width, initial-scale=1.0">
+        <title>University Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c6f6f13923.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo_lnu1.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a> </li>
+                        <li><a href="about.html">ABOUT</a> </li>
+                        <li><a href="course.html">COURSE</a> </li>
+                        <li><a href="blog.html">BLOG</a> </li>
+                        <li><a href="contact.html">CONTACT</a> </li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Courses</h1>
+        </section>
+
+        <!----- Course ----->
+        
+        <section class="course">
+            <h1>Courses We Offer</h1>
+            <p>Faculty of Biology. Geography faculty. Faculty of Foreign Languages. Faculty of Applied Mathematics and Informatics. Faculty of Law and others...</p>
+
+            <div class="row">
+                <div class="course-col">
+                    <h3>Intermediate</h3>
+                    <p>We provide bachelor's degree. The bachelor's program usually involves a 4-year initial fundamental training in the chosen field of knowledge. During the course of study,
+                         the student learns basic information from other scientific fields, mainly of a general educational nature</p>
+                </div>
+
+                <div class="course-col">
+                    <h3>Degree</h3>
+                    <p>After we provide for our students Master's degree. The duration of the master's degree varies depending on the university and the study program. On average — 1.5-2 years.</p>
+                </div>
+
+                <div class="course-col">
+                    <h3>Postgraduation</h3>
+                    <p>It goes after Master's degree. After completion of postgraduate studies, a dissertation for obtaining the scientific degree of candidate of sciences was submitted to the specialized academic council for defense.</p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!----- Facilities ----->
+        
+        <section class="facilities">
+            <h1>Our Facilities</h1>
+            <p>University provides bunch of the best and the most relevant facilities, which are liked by thousands of students around the world.</p>
+
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/library.png">
+                    <h3>World Class Library</h3>
+                    <p>University has large libraries, in different places, in separate buildings. Students have access to the most recent books and information from all over the world.</p>
+                </div>
+
+                <div class="facilities-col">
+                    <img src="images/basketball.png">
+                    <h3>Largest Playground</h3>
+                    <p>Our university has severeal sport complexes, which include several playgrounds. They are considered as the best in the city.</p>
+                </div>
+
+                <div class="facilities-col">
+                    <img src="images/cafeteria.png">
+                    <h3>Tasty and Healthy Food</h3>
+                    <p>Each building is provided with cafeteria, so that our students have access to high quality nutrition.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!----- Footer ----->
+
+        <section class="footer">
+            <h4></h4>
+            <p>© Ivan Franko Lviv National University</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/franko.lviv.ua" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/lnu.prykladna/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@user-nh2bv2yi1r" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://en.wikipedia.org/wiki/University_of_Lviv" target="_blank"><i class="fa-brands fa-wikipedia-w"></i></a>
+            </div>
+        </section>
+
+<!----- JavaScript for Toggle Menu ----->
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            
+            function showMenu()
+            {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu()
+            {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
